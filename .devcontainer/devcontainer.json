@@ -1,0 +1,13 @@
+{
+  "name": "Proxy Server",
+  "image": "://mcr.microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "customizations": {
+    "codespaces": {
+      "openPorts": [8080]
+    }
+  },
+  "postCreateCommand": "bash setup.sh"
+}
